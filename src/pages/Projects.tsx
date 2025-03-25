@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
@@ -47,7 +46,7 @@ const allProjects = [
     id: 6,
     title: 'Artisanal Café Design',
     category: 'Commercial',
-    description: 'A distinctive café interior that reflects the brand's commitment to craft coffee in a welcoming environment.',
+    description: 'A distinctive café interior that reflects the brand\'s commitment to craft coffee in a welcoming environment.',
     image: 'https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?q=80&w=2070&auto=format&fit=crop'
   },
   {
@@ -62,7 +61,7 @@ const allProjects = [
     id: 8,
     title: 'Corporate Headquarters',
     category: 'Commercial',
-    description: 'A comprehensive design for a corporate headquarters that embodies the company's values and enhances workplace culture.',
+    description: 'A comprehensive design for a corporate headquarters that embodies the company\'s values and enhances workplace culture.',
     image: 'https://images.unsplash.com/photo-1613963931023-5dc59437c8a6?q=80&w=1776&auto=format&fit=crop'
   },
   {

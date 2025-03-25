@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
@@ -11,7 +10,7 @@ const teamMembers = [
     name: 'Sophia Reynolds',
     role: 'Principal Designer & Founder',
     image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1976&auto=format&fit=crop',
-    bio: 'With over 15 years of experience in interior design, Sophia has led projects across residential, commercial, and hospitality sectors. Her design philosophy combines functionality with aesthetic beauty, creating spaces that reflect each client's unique personality and needs.'
+    bio: 'With over 15 years of experience in interior design, Sophia has led projects across residential, commercial, and hospitality sectors. Her design philosophy combines functionality with aesthetic beauty, creating spaces that reflect each client\'s unique personality and needs.'
   },
   {
     name: 'Alexander Chen',
@@ -36,7 +35,7 @@ const teamMembers = [
 const values = [
   {
     title: 'Client-Centered Approach',
-    description: 'We listen carefully to understand our clients' needs, preferences, and aspirations, placing them at the center of our design process.'
+    description: 'We listen carefully to understand our clients\' needs, preferences, and aspirations, placing them at the center of our design process.'
   },
   {
     title: 'Attention to Detail',

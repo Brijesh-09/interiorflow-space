@@ -32,21 +32,21 @@ const LoadingScreen: React.FC<LoadingScreenProps> = ({ onFinished }) => {
       }`}
     >
       <div className="relative w-32 h-32 mb-8">
-        <div className="absolute w-full h-full animate-morph bg-primary/10 border border-primary/20"></div>
-        <div className="absolute w-full h-full animate-morph animation-delay-200 bg-primary/10 border border-primary/20" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute w-full h-full animate-morph bg-gold-light/10 border border-gold-light/20"></div>
+        <div className="absolute w-full h-full animate-morph animation-delay-200 bg-gold-light/10 border border-gold-light/20" style={{ animationDelay: '1s' }}></div>
         <div className="absolute inset-0 flex items-center justify-center">
-          <span className="font-serif text-xl tracking-widest">FLOW</span>
+          <span className="font-serif text-xl tracking-widest text-gold-dark">FLOW</span>
         </div>
       </div>
       
-      <div className="w-48 h-1 bg-secondary rounded-full overflow-hidden">
+      <div className="w-48 h-[2px] bg-beige-dark/30 rounded-full overflow-hidden">
         <div 
-          className="h-full bg-primary transition-all duration-300 ease-out"
+          className="h-full bg-gold-gradient bg-[length:200%_auto] animate-shimmer transition-all duration-300 ease-out"
           style={{ width: `${progress}%` }}
         ></div>
       </div>
       
-      <div className="mt-2 text-xs font-medium">{Math.round(progress)}%</div>
+      <div className="mt-2 text-xs font-medium text-gold-dark">{Math.round(progress)}%</div>
     </div>
   );
 };

@@ -7,33 +7,33 @@
 
 @layer base {
   :root {
-    --background: 30 33% 99%;
-    --foreground: 20 14.3% 4.1%;
+    --background: 36 33% 97%;
+    --foreground: 35 22% 20%;
 
     --card: 0 0% 100%;
-    --card-foreground: 20 14.3% 4.1%;
+    --card-foreground: 35 22% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 20 14.3% 4.1%;
+    --popover-foreground: 35 22% 20%;
 
-    --primary: 24 9.8% 10%;
-    --primary-foreground: 60 9.1% 97.8%;
+    --primary: 36 30% 40%;
+    --primary-foreground: 36 33% 97%;
 
-    --secondary: 60 4.8% 95.9%;
-    --secondary-foreground: 24 9.8% 10%;
+    --secondary: 36 25% 94%;
+    --secondary-foreground: 35 22% 20%;
 
-    --muted: 60 4.8% 95.9%;
-    --muted-foreground: 25 5.3% 44.7%;
+    --muted: 36 30% 92%;
+    --muted-foreground: 30 10% 40%;
 
-    --accent: 60 4.8% 95.9%;
-    --accent-foreground: 24 9.8% 10%;
+    --accent: 42 78% 60%;
+    --accent-foreground: 36 40% 20%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 60 9.1% 97.8%;
+    --destructive-foreground: 36 33% 97%;
 
-    --border: 20 5.9% 90%;
-    --input: 20 5.9% 90%;
-    --ring: 24 5.4% 63.9%;
+    --border: 36 15% 86%;
+    --input: 36 15% 86%;
+    --ring: 36 30% 40%;
 
     --radius: 0.5rem;
   }
@@ -66,7 +66,7 @@
   }
 
   .nav-link {
-    @apply relative px-2 py-1 text-sm transition-all duration-300 hover:text-primary before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-0 before:bg-primary before:transition-all before:duration-300 hover:before:w-full;
+    @apply relative px-2 py-1 text-sm transition-all duration-300 hover:text-accent before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-0 before:bg-accent before:transition-all before:duration-300 hover:before:w-full;
   }
 
   .page-transition-enter {
@@ -88,6 +88,26 @@
   .hero-mask {
     -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 85%, rgba(0,0,0,0));
     mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 85%, rgba(0,0,0,0));
+  }
+
+  .premium-button {
+    @apply px-6 py-3 text-sm font-medium transition-all duration-300 border border-accent bg-transparent hover:bg-accent hover:text-accent-foreground relative overflow-hidden shadow-sm hover:shadow-md after:absolute after:inset-0 after:z-[-1] after:bg-gradient-to-r after:from-accent/30 after:to-accent/0 after:opacity-0 hover:after:opacity-100 after:transition-opacity after:duration-500;
+  }
+
+  .premium-button-filled {
+    @apply px-6 py-3 text-sm font-medium transition-all duration-300 bg-accent text-accent-foreground hover:bg-accent/90 shadow-sm hover:shadow-md;
+  }
+
+  .gold-gradient {
+    @apply bg-gradient-to-r from-accent/80 via-accent to-accent/80 bg-clip-text text-transparent;
+  }
+
+  .elegant-border {
+    @apply border border-accent/20 hover:border-accent/40 transition-colors duration-300;
+  }
+
+  .decorated-title {
+    @apply relative inline-block after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-12 after:h-[2px] after:bg-accent;
   }
 }
 
@@ -122,10 +142,10 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: #d4bc7e;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #b59d5e;
 }

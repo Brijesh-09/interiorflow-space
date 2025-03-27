@@ -57,6 +57,16 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        gold: {
+          light: "#d4bc7e",
+          DEFAULT: "#b59d5e",
+          dark: "#8e7a3c",
+        },
+        beige: {
+          light: "#f5f1e8",
+          DEFAULT: "#e8e0cd",
+          dark: "#d5c9ad",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -123,6 +133,10 @@ export default {
           "0%": { transform: "translateY(0px)" },
           "50%": { transform: "translateY(-10px)" },
           "100%": { transform: "translateY(0px)" }
+        },
+        "shimmer": {
+          "0%": { backgroundPosition: "-200% 0" },
+          "100%": { backgroundPosition: "200% 0" }
         }
       },
       animation: {
@@ -137,7 +151,11 @@ export default {
         "loader": "loader 1.5s ease-in-out infinite",
         "morph": "morph 8s ease-in-out infinite",
         "rotate": "rotate 15s linear infinite",
-        "float": "float 6s ease-in-out infinite"
+        "float": "float 6s ease-in-out infinite",
+        "shimmer": "shimmer 3s linear infinite"
+      },
+      backgroundImage: {
+        "gold-gradient": "linear-gradient(90deg, #b59d5e, #d4bc7e, #b59d5e)",
       },
     },
   },

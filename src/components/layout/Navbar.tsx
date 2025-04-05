@@ -38,7 +38,7 @@ const Navbar: React.FC = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="font-serif text-2xl tracking-tight hover:opacity-80 transition-opacity">
-            INTERIORFLOW
+            S.A. Atelier & Co.
           </Link>
 
           {/* Desktop Navigation */}

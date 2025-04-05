@@ -79,7 +79,7 @@ const Index: React.FC = () => {
               Transform Your Space
             </h1>
             <p className="max-w-xl text-lg md:text-xl mb-8 animate-fade-in" style={{ animationDelay: '0.6s' }}>
-              Elevating interiors through thoughtful design and meticulous attention to detail
+            Enhancing interiors with intentional design and a keen eye for detail.
             </p>
             <div className="space-x-4 animate-fade-in" style={{ animationDelay: '0.9s' }}>
               <Link 
@@ -104,13 +104,12 @@ const Index: React.FC = () => {
                 <span className="text-xs uppercase tracking-wider text-muted-foreground mb-3 inline-block">About Us</span>
                 <h2 className="text-3xl md:text-4xl font-serif mb-6">Creating Exceptional Living Spaces</h2>
                 <p className="text-muted-foreground mb-6">
-                  At InteriorFlow, we believe that exceptional spaces tell stories. Our approach blends functionality, 
-                  aesthetics, and the unique personality of each client to create interiors that inspire.
+                At SAATELIER, we believe that extraordinary spaces tell compelling stories. Our design philosophy seamlessly integrates functionality, aesthetics, and each client’s unique personality to create interiors that inspire.We are professionals who transform your spaces into a canvas, crafting a home that embodies comfort and warmth. With hands-on experience in the field, we've worked alongside designers and architects to create inviting and personalized living spaces.
                 </p>
-                <p className="mb-8">
+                {/* <p className="mb-8">
                   With over 15 years of experience in residential and commercial design, our team brings expertise, 
                   creativity, and attention to detail to every project.
-                </p>
+                </p> */}
                 <Link 
                   to="/about" 
                   className="inline-flex items-center text-sm font-medium text-primary hover:underline"

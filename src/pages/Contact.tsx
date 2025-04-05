@@ -82,7 +82,7 @@ const Contact: React.FC = () => {
                     <Mail className="mr-4 text-primary flex-shrink-0" />
                     <div>
                       <h3 className="font-medium mb-1">Email</h3>
-                      <p className="text-muted-foreground">info@interiorflow.com</p>
+                      <p className="text-muted-foreground">info@S.A. Atelier & Co..com</p>
                     </div>
                   </div>
                   
@@ -127,7 +127,7 @@ const Contact: React.FC = () => {
                 allowFullScreen 
                 loading="lazy" 
                 referrerPolicy="no-referrer-when-downgrade"
-                title="InteriorFlow Studio Location"
+                title="S.A. Atelier & Co. Studio Location"
                 className="border-0"
               ></iframe>
             </div>

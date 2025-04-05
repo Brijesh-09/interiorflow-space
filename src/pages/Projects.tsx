@@ -162,7 +162,7 @@ const Projects: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="p-8 bg-background border border-border">
                 <p className="italic text-muted-foreground mb-6">
-                  "InteriorFlow transformed our home beyond our expectations. Their ability to understand our 
+                  "S.A. Atelier & Co. transformed our home beyond our expectations. Their ability to understand our 
                   lifestyle and translate it into a beautiful, functional design is remarkable."
                 </p>
                 <div className="flex items-center">
@@ -182,7 +182,7 @@ const Projects: React.FC = () => {
               
               <div className="p-8 bg-background border border-border">
                 <p className="italic text-muted-foreground mb-6">
-                  "Working with the InteriorFlow team was a seamless experience from start to finish. Their attention 
+                  "Working with the S.A. Atelier & Co. team was a seamless experience from start to finish. Their attention 
                   to detail and commitment to excellence is evident in every aspect of our office design."
                 </p>
                 <div className="flex items-center">

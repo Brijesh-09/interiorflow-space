@@ -6,6 +6,7 @@ import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
 import ProjectCard from '../components/ui/ProjectCard';
 import LoadingScreen from '../components/ui/LoadingScreen';
+import bgImage from '../assets/bg_image.jpg'
 
 // Sample data
 const featuredProjects = [
@@ -67,9 +68,7 @@ const Index: React.FC = () => {
             <div 
               ref={parallaxRef}
               className="parallax-bg hero-mask"
-              style={{ 
-                backgroundImage: 'url(https://images.unsplash.com/photo-1618219944342-824e40a13285?q=80&w=2070&auto=format&fit=crop)'
-              }}
+              style={{ backgroundImage: `url(${bgImage})` }}
             ></div>
             <div className="absolute inset-0 bg-black/10"></div>
           </div>

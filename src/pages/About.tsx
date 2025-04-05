@@ -90,7 +90,7 @@ const About: React.FC = () => {
                 <span className="text-xs uppercase tracking-wider text-muted-foreground mb-3 inline-block">Our Story</span>
                 <h2 className="text-3xl md:text-4xl font-serif mb-6">A Passion for Transformative Design</h2>
                 <p className="text-muted-foreground mb-6">
-                  Founded in 2008 by Sophia Reynolds, InteriorFlow began with a simple mission: to create spaces that inspire, 
+                  Founded in 2008 by Sophia Reynolds, S.A. Atelier & Co. began with a simple mission: to create spaces that inspire, 
                   function beautifully, and reflect the unique personality of each client.
                 </p>
                 <p className="mb-6">

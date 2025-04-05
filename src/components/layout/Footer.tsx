@@ -9,21 +9,21 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           <div>
-            <h3 className="font-serif text-xl mb-4">INTERIORFLOW</h3>
+            <h3 className="font-serif text-xl mb-4">S.A. Atelier & Co.</h3>
             <p className="text-muted-foreground mb-6">
               Transforming spaces into extraordinary experiences through thoughtful design and attention to detail.
             </p>
             <div className="flex space-x-4">
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="p-2 bg-background rounded-full hover:bg-primary hover:text-primary-foreground transition-colors" aria-label="Instagram">
+              <a href="https://www.instagram.com/saatelierco?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" className="p-2 bg-background rounded-full hover:bg-primary hover:text-primary-foreground transition-colors" aria-label="Instagram">
                 <Instagram size={18} />
               </a>
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="p-2 bg-background rounded-full hover:bg-primary hover:text-primary-foreground transition-colors" aria-label="Facebook">
+              {/* <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="p-2 bg-background rounded-full hover:bg-primary hover:text-primary-foreground transition-colors" aria-label="Facebook">
                 <Facebook size={18} />
-              </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="p-2 bg-background rounded-full hover:bg-primary hover:text-primary-foreground transition-colors" aria-label="LinkedIn">
+              </a> */}
+              {/* <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="p-2 bg-background rounded-full hover:bg-primary hover:text-primary-foreground transition-colors" aria-label="LinkedIn">
                 <Linkedin size={18} />
-              </a>
-              <a href="mailto:info@interiorflow.com" className="p-2 bg-background rounded-full hover:bg-primary hover:text-primary-foreground transition-colors" aria-label="Email">
+              </a> */}
+              <a href="mailto:SAatelier19@gmail.com" className="p-2 bg-background rounded-full hover:bg-primary hover:text-primary-foreground transition-colors" aria-label="Email">
                 <Mail size={18} />
               </a>
             </div>
@@ -40,15 +40,15 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="font-serif text-lg mb-4">Contact</h3>
             <address className="not-italic text-muted-foreground">
-              <p>123 Design Avenue</p>
-              <p>New York, NY 10001</p>
-              <p className="mt-2">+1 (555) 123-4567</p>
-              <p>info@interiorflow.com</p>
+              <p>c/703 olympia Building</p>
+              <p>Mumbai , India</p>
+              <p className="mt-2">+91 7977947369</p>
+              <p>info@S.A.com</p>
             </address>
           </div>
         </div>
         <div className="border-t border-border pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} INTERIORFLOW. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} S.A. Atelier & Co.. All rights reserved.</p>
         </div>
       </div>
     </footer>

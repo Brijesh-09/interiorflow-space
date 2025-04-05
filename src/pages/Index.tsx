@@ -6,7 +6,7 @@ import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
 import ProjectCard from '../components/ui/ProjectCard';
 import LoadingScreen from '../components/ui/LoadingScreen';
-import bgImage from '../assets/bg_image.jpg'
+import bgImage from '../assets/bg_image2.jpg'
 
 // Sample data
 const featuredProjects = [

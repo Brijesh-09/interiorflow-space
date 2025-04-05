@@ -63,9 +63,8 @@ const Contact: React.FC = () => {
                     <div>
                       <h3 className="font-medium mb-1">Our Studio</h3>
                       <address className="not-italic text-muted-foreground">
-                        123 Design Avenue<br />
-                        New York, NY 10001<br />
-                        United States
+                        c/703 Olympia Building<br />
+                        Mumbai , India <br />
                       </address>
                     </div>
                   </div>
@@ -74,7 +73,7 @@ const Contact: React.FC = () => {
                     <Phone className="mr-4 text-primary flex-shrink-0" />
                     <div>
                       <h3 className="font-medium mb-1">Phone</h3>
-                      <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                      <p className="text-muted-foreground">+91 7977947369</p>
                     </div>
                   </div>
                   
@@ -82,7 +81,7 @@ const Contact: React.FC = () => {
                     <Mail className="mr-4 text-primary flex-shrink-0" />
                     <div>
                       <h3 className="font-medium mb-1">Email</h3>
-                      <p className="text-muted-foreground">info@S.A. Atelier & Co..com</p>
+                      <p className="text-muted-foreground">info@S.A.com</p>
                     </div>
                   </div>
                   
@@ -91,8 +90,8 @@ const Contact: React.FC = () => {
                     <div>
                       <h3 className="font-medium mb-1">Working Hours</h3>
                       <p className="text-muted-foreground">Monday – Friday: 9:00 AM – 6:00 PM</p>
-                      <p className="text-muted-foreground">Saturday: By appointment only</p>
-                      <p className="text-muted-foreground">Sunday: Closed</p>
+                      {/* <p className="text-muted-foreground">Saturday: By appointment only</p>
+                      <p className="text-muted-foreground">Sunday: Closed</p> */}
                     </div>
                   </div>
                 </div>
@@ -100,36 +99,18 @@ const Contact: React.FC = () => {
                 <div>
                   <h3 className="font-medium mb-3">Connect With Us</h3>
                   <div className="flex space-x-4">
-                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="p-3 bg-secondary/50 rounded-full hover:bg-primary hover:text-primary-foreground transition-colors" aria-label="Instagram">
+                    <a href="https://www.instagram.com/saatelierco?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" className="p-3 bg-secondary/50 rounded-full hover:bg-primary hover:text-primary-foreground transition-colors" aria-label="Instagram">
                       <Instagram size={20} />
                     </a>
-                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="p-3 bg-secondary/50 rounded-full hover:bg-primary hover:text-primary-foreground transition-colors" aria-label="Facebook">
-                      <Facebook size={20} />
-                    </a>
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="p-3 bg-secondary/50 rounded-full hover:bg-primary hover:text-primary-foreground transition-colors" aria-label="LinkedIn">
+                    <a href="mailto:SAatelier19@gmail.com" className="p-2 bg-background rounded-full hover:bg-primary hover:text-primary-foreground transition-colors" aria-label="Email">
+                <Mail size={18} />
+              </a>
+                    {/* <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="p-3 bg-secondary/50 rounded-full hover:bg-primary hover:text-primary-foreground transition-colors" aria-label="LinkedIn">
                       <Linkedin size={20} />
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
-        
-        {/* Map Section */}
-        <section className="py-8 pb-20">
-          <div className="container mx-auto px-6 md:px-12">
-            <div className="aspect-[16/9] w-full">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.11976397304903!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2suk!4v1659567127543!5m2!1sen!2suk" 
-                width="100%" 
-                height="100%" 
-                allowFullScreen 
-                loading="lazy" 
-                referrerPolicy="no-referrer-when-downgrade"
-                title="S.A. Atelier & Co. Studio Location"
-                className="border-0"
-              ></iframe>
             </div>
           </div>
         </section>

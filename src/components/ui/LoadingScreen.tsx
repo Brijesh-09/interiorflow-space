@@ -35,7 +35,7 @@ const LoadingScreen: React.FC<LoadingScreenProps> = ({ onFinished }) => {
         <div className="absolute w-full h-full animate-morph bg-gold-light/10 border border-gold-light/20"></div>
         <div className="absolute w-full h-full animate-morph animation-delay-200 bg-gold-light/10 border border-gold-light/20" style={{ animationDelay: '1s' }}></div>
         <div className="absolute inset-0 flex items-center justify-center">
-          <span className="font-serif text-xl tracking-widest text-gold-dark">FLOW</span>
+          <span className="font-serif text-xl tracking-widest text-gold-light">FLOW</span>
         </div>
       </div>
       
@@ -46,7 +46,7 @@ const LoadingScreen: React.FC<LoadingScreenProps> = ({ onFinished }) => {
         ></div>
       </div>
       
-      <div className="mt-2 text-xs font-medium text-gold-dark">{Math.round(progress)}%</div>
+      <div className="mt-2 text-xs font-medium text-gold-light">{Math.round(progress)}%</div>
     </div>
   );
 };

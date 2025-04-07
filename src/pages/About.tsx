@@ -3,32 +3,21 @@ import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
 import TeamMember from '../components/ui/TeamMember';
 import LoadingScreen from '../components/ui/LoadingScreen';
+import  motu from '../assets/motu.jpeg';
 
 // Sample data
 const teamMembers = [
   {
-    name: 'Sophia Reynolds',
+    name: 'Saijal Srivastava',
     role: 'Principal Designer & Founder',
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1976&auto=format&fit=crop',
-    bio: 'With over 15 years of experience in interior design, Sophia has led projects across residential, commercial, and hospitality sectors. Her design philosophy combines functionality with aesthetic beauty, creating spaces that reflect each client\'s unique personality and needs.'
+    image: motu,
+    bio: 'With over 3 years of experience in interior design, Saijal has led projects across residential, commercial sectors. Her design philosophy combines functionality with aesthetic beauty, creating spaces that reflect each client\'s unique personality and needs.'
   },
   {
     name: 'Alexander Chen',
     role: 'Creative Director',
     image: 'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=2070&auto=format&fit=crop',
     bio: 'Alex brings innovative vision and creative direction to every project. His background in architecture and fine arts informs his holistic approach to design, seamlessly blending structure, materials, and artistic elements.'
-  },
-  {
-    name: 'Olivia Martinez',
-    role: 'Senior Interior Designer',
-    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop',
-    bio: 'Specializing in residential design, Olivia has a talent for creating warm, inviting spaces that feel both luxurious and livable. Her attention to detail and understanding of material selection sets her work apart.'
-  },
-  {
-    name: 'Ethan Brooks',
-    role: 'Project Manager',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop',
-    bio: 'Ethan ensures that every project runs smoothly from concept to completion. His organizational skills, communication, and deep knowledge of construction processes help bring design visions to reality on time and within budget.'
   }
 ];
 
@@ -90,7 +79,7 @@ const About: React.FC = () => {
                 <span className="text-xs uppercase tracking-wider text-muted-foreground mb-3 inline-block">Our Story</span>
                 <h2 className="text-3xl md:text-4xl font-serif mb-6">A Passion for Transformative Design</h2>
                 <p className="text-muted-foreground mb-6">
-                  Founded in 2008 by Sophia Reynolds, S.A. Atelier & Co. began with a simple mission: to create spaces that inspire, 
+                  Founded in 2008 by Saijal Reynolds, S.A. Atelier & Co. began with a simple mission: to create spaces that inspire, 
                   function beautifully, and reflect the unique personality of each client.
                 </p>
                 <p className="mb-6">

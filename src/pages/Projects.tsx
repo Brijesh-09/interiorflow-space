@@ -3,7 +3,9 @@ import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
 import ProjectCard from '../components/ui/ProjectCard';
 import LoadingScreen from '../components/ui/LoadingScreen';
-
+import about_small from '../assets/about.jpg';
+import daughters_room from '../assets/daughters.jpg';
+import common_bathroom from '../assets/common_bathroom.jpg';
 // Sample data
 const allProjects = [
   {
@@ -11,7 +13,8 @@ const allProjects = [
     title: 'Minimalist Urban Apartment',
     category: 'Residential',
     description: 'A serene urban retreat designed with minimalist principles for a young professional couple in the heart of the city.',
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop',
+    image: about_small,
+  //  image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop',
     featured: true
   },
   {
@@ -19,58 +22,61 @@ const allProjects = [
     title: 'Coastal Villa Renovation',
     category: 'Residential',
     description: 'Complete renovation of a seaside villa, blending traditional architecture with contemporary interior elements.',
-    image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=1932&auto=format&fit=crop'
+    image: daughters_room,
+    // image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=1932&auto=format&fit=crop'
   },
   {
     id: 3,
     title: 'Modern Office Space',
     category: 'Commercial',
     description: 'Transforming a corporate environment into a collaborative and inspiring workspace for a tech startup.',
-    image: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=2069&auto=format&fit=crop'
+    image: common_bathroom,
+    // image: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=2069&auto=format&fit=crop'
   },
   {
     id: 4,
     title: 'Boutique Hotel Lobby',
     category: 'Hospitality',
     description: 'A sophisticated lobby design for a boutique hotel, creating a memorable first impression for guests.',
-    image: 'https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?q=80&w=2071&auto=format&fit=crop'
+    image: common_bathroom,
+    // image: 'https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?q=80&w=2071&auto=format&fit=crop'
   },
-  {
-    id: 5,
-    title: 'Contemporary Family Home',
-    category: 'Residential',
-    description: 'A spacious family residence that balances functionality with modern aesthetics, creating a warm and inviting atmosphere.',
-    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop'
-  },
-  {
-    id: 6,
-    title: 'Artisanal Café Design',
-    category: 'Commercial',
-    description: 'A distinctive café interior that reflects the brand\'s commitment to craft coffee in a welcoming environment.',
-    image: 'https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?q=80&w=2070&auto=format&fit=crop'
-  },
-  {
-    id: 7,
-    title: 'Mountain Retreat',
-    category: 'Residential',
-    description: 'A cozy yet luxurious mountain home that embraces natural materials and panoramic views.',
-    image: 'https://images.unsplash.com/photo-1604014237800-1c9102c219da?q=80&w=2070&auto=format&fit=crop',
-    featured: true
-  },
-  {
-    id: 8,
-    title: 'Corporate Headquarters',
-    category: 'Commercial',
-    description: 'A comprehensive design for a corporate headquarters that embodies the company\'s values and enhances workplace culture.',
-    image: 'https://images.unsplash.com/photo-1613963931023-5dc59437c8a6?q=80&w=1776&auto=format&fit=crop'
-  },
-  {
-    id: 9,
-    title: 'Urban Loft Conversion',
-    category: 'Residential',
-    description: 'Transformation of an industrial loft space into a sophisticated urban dwelling with character and style.',
-    image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2070&auto=format&fit=crop'
-  }
+  // {
+  //   id: 5,
+  //   title: 'Contemporary Family Home',
+  //   category: 'Residential',
+  //   description: 'A spacious family residence that balances functionality with modern aesthetics, creating a warm and inviting atmosphere.',
+  // //   image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop'
+  //  },
+  // {
+  //   id: 6,
+  //   title: 'Artisanal Café Design',
+  //   category: 'Commercial',
+  //   description: 'A distinctive café interior that reflects the brand\'s commitment to craft coffee in a welcoming environment.',
+  //   // image: 'https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?q=80&w=2070&auto=format&fit=crop'
+  // },
+  // {
+  //   id: 7,
+  //   title: 'Mountain Retreat',
+  //   category: 'Residential',
+  //   description: 'A cozy yet luxurious mountain home that embraces natural materials and panoramic views.',
+  //   // image: 'https://images.unsplash.com/photo-1604014237800-1c9102c219da?q=80&w=2070&auto=format&fit=crop',
+  //   featured: true
+  // },
+  // {
+  //   id: 8,
+  //   title: 'Corporate Headquarters',
+  //   category: 'Commercial',
+  //   description: 'A comprehensive design for a corporate headquarters that embodies the company\'s values and enhances workplace culture.',
+  //   // image: 'https://images.unsplash.com/photo-1613963931023-5dc59437c8a6?q=80&w=1776&auto=format&fit=crop'
+  // },
+  // {
+  //   id: 9,
+  //   title: 'Urban Loft Conversion',
+  //   category: 'Residential',
+  //   description: 'Transformation of an industrial loft space into a sophisticated urban dwelling with character and style.',
+  //   // image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2070&auto=format&fit=crop'
+  // }
 ];
 
 const categories = ['All', 'Residential', 'Commercial', 'Hospitality'];

@@ -1,4 +1,3 @@
-
 import React, { useRef, useEffect } from 'react';
 import { ArrowUpRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -49,7 +48,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   return (
     <div 
       ref={cardRef} 
-      className={`opacity-0 group overflow-hidden ${featured ? 'md:col-span-2 md:row-span-2' : ''}`}
+      className={`group overflow-hidden ${featured ? 'md:col-span-2 md:row-span-2' : ''}`}
     >
       <Link to={`/projects/${id}`} className="block h-full">
         <div className="relative h-full bg-background border border-border hover:border-accent/30 transition-all duration-500 overflow-hidden">

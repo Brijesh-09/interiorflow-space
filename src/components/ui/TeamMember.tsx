@@ -1,4 +1,3 @@
-
 import React, { useRef, useEffect } from 'react';
 
 interface TeamMemberProps {
@@ -36,7 +35,7 @@ const TeamMember: React.FC<TeamMemberProps> = ({ name, role, image, bio }) => {
   }, []);
 
   return (
-    <div ref={memberRef} className="opacity-0 group">
+    <div ref={memberRef} className="group">
       <div className="overflow-hidden">
         <div className="relative aspect-[3/4] mb-4 overflow-hidden">
           <img 

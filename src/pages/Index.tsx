@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowDown, ArrowRight } from 'lucide-react';
@@ -7,6 +6,10 @@ import Footer from '../components/layout/Footer';
 import ProjectCard from '../components/ui/ProjectCard';
 import LoadingScreen from '../components/ui/LoadingScreen';
 import bgImage from '../assets/bg_image2.jpg'
+import about_small from '../assets/about.jpg';
+import common_bathroom from '../assets/common_bathroom.jpg';
+import daughters_room from '../assets/daughters.jpg';
+
 
 // Sample data
 const featuredProjects = [
@@ -15,7 +18,7 @@ const featuredProjects = [
     title: 'Minimalist Urban Apartment',
     category: 'Residential',
     description: 'A serene urban retreat designed with minimalist principles for a young professional couple in the heart of the city.',
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop',
+    image: common_bathroom,
     featured: true
   },
   {
@@ -23,14 +26,16 @@ const featuredProjects = [
     title: 'Coastal Villa Renovation',
     category: 'Residential',
     description: 'Complete renovation of a seaside villa, blending traditional architecture with contemporary interior elements.',
-    image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=1932&auto=format&fit=crop'
+    image: daughters_room,
+    featured: true
   },
   {
     id: 3,
     title: 'Modern Office Space',
     category: 'Commercial',
     description: 'Transforming a corporate environment into a collaborative and inspiring workspace for a tech startup.',
-    image: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=2069&auto=format&fit=crop'
+    image: common_bathroom,
+    featured: true
   }
 ];
 
@@ -67,8 +72,9 @@ const Index: React.FC = () => {
           <div className="parallax-container">
             <div 
               ref={parallaxRef}
+              
               className="parallax-bg hero-mask"
-              style={{ backgroundImage: `url(${bgImage})` }}
+              style={{ backgroundImage: `url(https://images.unsplash.com/photo-1606744824163-985d376605aa?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)` }}
             ></div>
             <div className="absolute inset-0 bg-black/10"></div>
           </div>
@@ -103,7 +109,7 @@ const Index: React.FC = () => {
                 <span className="text-xs uppercase tracking-wider text-muted-foreground mb-3 inline-block">About Us</span>
                 <h2 className="text-3xl md:text-4xl font-serif mb-6">Creating Exceptional Living Spaces</h2>
                 <p className="text-muted-foreground mb-6">
-                At SAATELIER, we believe that extraordinary spaces tell compelling stories. Our design philosophy seamlessly integrates functionality, aesthetics, and each client’s unique personality to create interiors that inspire.We are professionals who transform your spaces into a canvas, crafting a home that embodies comfort and warmth. With hands-on experience in the field, we've worked alongside designers and architects to create inviting and personalized living spaces.
+                At SAATELIER, we believe that extraordinary spaces tell compelling stories. Our design philosophy seamlessly integrates functionality, aesthetics, and each client's unique personality to create interiors that inspire.We are professionals who transform your spaces into a canvas, crafting a home that embodies comfort and warmth. With hands-on experience in the field, we've worked alongside designers and architects to create inviting and personalized living spaces.
                 </p>
                 {/* <p className="mb-8">
                   With over 15 years of experience in residential and commercial design, our team brings expertise, 
@@ -120,7 +126,7 @@ const Index: React.FC = () => {
               <div className="relative">
                 <div className="absolute -top-6 -left-6 w-64 h-64 bg-primary/5 rounded-sm animate-float"></div>
                 <img 
-                  src="https://images.unsplash.com/photo-1632829882891-5047ccc421bc?q=80&w=2070&auto=format&fit=crop" 
+                  src={about_small} 
                   alt="Interior design studio" 
                   className="relative w-full h-auto rounded-sm object-cover z-10"
                 />

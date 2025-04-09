@@ -7,9 +7,9 @@ import ProjectCard from '../components/ui/ProjectCard';
 import LoadingScreen from '../components/ui/LoadingScreen';
 import bgImage from '../assets/bg_image2.jpg'
 import about_small from '../assets/about.jpg';
-import common_bathroom from '../assets/common_bathroom.jpg';
 import daughters_room from '../assets/daughters.jpg';
-
+import daughters_bedroom from '../assets/daughters_bedroom.jpg';
+import saijalhall from '../assets/saijalhall.jpg';
 
 // Sample data
 const featuredProjects = [
@@ -17,26 +17,19 @@ const featuredProjects = [
     id: 1,
     title: 'Minimalist Urban Apartment',
     category: 'Residential',
-    description: 'A serene urban retreat designed with minimalist principles for a young professional couple in the heart of the city.',
-    image: common_bathroom,
-    featured: true
-  },
-  {
-    id: 2,
-    title: 'Coastal Villa Renovation',
-    category: 'Residential',
-    description: 'Complete renovation of a seaside villa, blending traditional architecture with contemporary interior elements.',
+    description: 'Create a serene girls bedroom with Japandi and Wabi Sabi influences, blending minimalist elegance and rustic charm. Use natural materials, simple furniture, and subtle pops of color to embrace imperfection and craftsmanship.',
     image: daughters_room,
+  //  image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop',
     featured: true
   },
   {
-    id: 3,
-    title: 'Modern Office Space',
-    category: 'Commercial',
-    description: 'Transforming a corporate environment into a collaborative and inspiring workspace for a tech startup.',
-    image: common_bathroom,
-    featured: true
-  }
+    id: 5,
+    title: 'Contemporary Family Home',
+    category: 'Residential',
+    featured: true,
+        description: 'A spacious family residence that balances functionality with modern aesthetics, creating a warm and inviting atmosphere.',
+     image: saijalhall,
+   },
 ];
 
 const Index: React.FC = () => {
@@ -147,9 +140,18 @@ const Index: React.FC = () => {
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {featuredProjects.map(project => (
-                <ProjectCard key={project.id} {...project} />
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
+              {featuredProjects.map((project, index) => (
+                <div 
+                  key={project.id} 
+                  className={`
+                    ${index === 0 ? 'md:col-span-6 md:row-span-2' : ''}
+                    ${index === 1 ? 'md:col-span-6' : ''}
+                    ${index === 2 ? 'md:col-span-6' : ''}
+                  `}
+                >
+                  <ProjectCard {...project} featured={index === 0} />
+                </div>
               ))}
             </div>
             

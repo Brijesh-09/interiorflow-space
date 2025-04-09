@@ -5,49 +5,53 @@ import ProjectCard from '../components/ui/ProjectCard';
 import LoadingScreen from '../components/ui/LoadingScreen';
 import about_small from '../assets/about.jpg';
 import daughters_room from '../assets/daughters.jpg';
+import daughters_bedroom from '../assets/daughters_bedroom.jpg';
 import common_bathroom from '../assets/common_bathroom.jpg';
+import living_tv from '../assets/living_tv.jpg';
+import saijalhall from '../assets/saijalhall.jpg';
 // Sample data
 const allProjects = [
   {
     id: 1,
     title: 'Minimalist Urban Apartment',
     category: 'Residential',
-    description: 'A serene urban retreat designed with minimalist principles for a young professional couple in the heart of the city.',
-    image: about_small,
+    description: 'Create a serene girls bedroom with Japandi and Wabi Sabi influences, blending minimalist elegance and rustic charm. Use natural materials, simple furniture, and subtle pops of color to embrace imperfection and craftsmanship.',
+    image: daughters_room,
   //  image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop',
     featured: true
   },
   {
     id: 2,
-    title: 'Coastal Villa Renovation',
+    title: 'Modern Japandi Bedroom',
     category: 'Residential',
-    description: 'Complete renovation of a seaside villa, blending traditional architecture with contemporary interior elements.',
-    image: daughters_room,
+    description: 'Create a modern Japandi bedroom with a mix of traditional and contemporary elements. Use natural materials, simple furniture, and subtle pops of color to embrace imperfection and craftsmanship.',
+    image: daughters_bedroom,
     // image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=1932&auto=format&fit=crop'
   },
   {
     id: 3,
-    title: 'Modern Office Space',
+    title: 'Modern Office Washroom  ',
     category: 'Commercial',
-    description: 'Transforming a corporate environment into a collaborative and inspiring workspace for a tech startup.',
+    description: 'Create a modern office washroom with a mix of traditional and contemporary elements. Use natural materials, simple furniture, and subtle pops of color to embrace imperfection and craftsmanship.',
     image: common_bathroom,
     // image: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=2069&auto=format&fit=crop'
   },
   {
     id: 4,
-    title: 'Boutique Hotel Lobby',
-    category: 'Hospitality',
-    description: 'A sophisticated lobby design for a boutique hotel, creating a memorable first impression for guests.',
-    image: common_bathroom,
+    title: 'Living Room',
+    category: 'Residential',
+    description: 'Create a living room with a mix of traditional and contemporary elements. Use natural materials, simple furniture, and subtle pops of color to embrace imperfection and craftsmanship.',
+    image: living_tv,
     // image: 'https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?q=80&w=2071&auto=format&fit=crop'
   },
-  // {
-  //   id: 5,
-  //   title: 'Contemporary Family Home',
-  //   category: 'Residential',
-  //   description: 'A spacious family residence that balances functionality with modern aesthetics, creating a warm and inviting atmosphere.',
-  // //   image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop'
-  //  },
+  {
+    id: 5,
+    title: 'Contemporary Family Home',
+    category: 'Residential',
+    featured: true,
+        description: 'A spacious family residence that balances functionality with modern aesthetics, creating a warm and inviting atmosphere.',
+     image: saijalhall,
+   },
   // {
   //   id: 6,
   //   title: 'Artisanal Café Design',
@@ -79,7 +83,7 @@ const allProjects = [
   // }
 ];
 
-const categories = ['All', 'Residential', 'Commercial', 'Hospitality'];
+const categories = ['All', 'Residential', 'Commercial'];
 
 const Projects: React.FC = () => {
   const [loading, setLoading] = useState(true);
@@ -158,7 +162,7 @@ const Projects: React.FC = () => {
         </section>
         
         {/* Testimonials Section */}
-        <section className="py-20 bg-secondary/30">
+        {/* <section className="py-20 bg-secondary/30">
           <div className="container mx-auto px-6 md:px-12">
             <div className="text-center max-w-3xl mx-auto mb-16">
               <span className="text-xs uppercase tracking-wider text-muted-foreground mb-3 inline-block">Testimonials</span>
@@ -227,7 +231,7 @@ const Projects: React.FC = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         
         <Footer />
       </div>

@@ -42,8 +42,8 @@ const Footer: React.FC = () => {
             <address className="not-italic text-muted-foreground">
               <p>c/703 olympia Building</p>
               <p>Mumbai , India</p>
-              <p className="mt-2">+91 7977947369</p>
-              <p>info@S.A.com</p>
+              <p className="mt-2">+91 7977947369 | +91 9329503909</p>
+              <p>saatelier19@gmail.com</p>
             </address>
           </div>
         </div>

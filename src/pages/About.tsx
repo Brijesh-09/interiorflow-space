@@ -79,8 +79,7 @@ const About: React.FC = () => {
                 <span className="text-xs uppercase tracking-wider text-muted-foreground mb-3 inline-block">Our Story</span>
                 <h2 className="text-3xl md:text-4xl font-serif mb-6">A Passion for Transformative Design</h2>
                 <p className="text-muted-foreground mb-6">
-                  Founded in 2008 by Saijal Reynolds, S.A. Atelier & Co. began with a simple mission: to create spaces that inspire, 
-                  function beautifully, and reflect the unique personality of each client.
+                At SAATELIER, we believe that extraordinary spaces tell compelling stories. Our design philosophy seamlessly integrates functionality, aesthetics, and each client's unique personality to create interiors that inspire. We are professionals who transform your spaces into a canvas, crafting a home that embodies comfort and warmth. With hands-on experience in the field, we've worked alongside designers and architects to create inviting and personalized living spaces.
                 </p>
                 <p className="mb-6">
                   What started as a small studio specializing in residential design has grown into a comprehensive interior design 
@@ -150,11 +149,11 @@ const About: React.FC = () => {
               <span className="text-xs uppercase tracking-wider text-muted-foreground mb-3 inline-block">Our Process</span>
               <h2 className="text-3xl md:text-4xl font-serif mb-6">How We Bring Your Vision to Life</h2>
               <p className="text-muted-foreground">
-                Our structured yet flexible design process ensures that we capture your vision and exceed your expectations at every stage.
+              Designing spaces that reflect your essence — elegant, functional, and uniquely you.
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
               <div className="text-center p-6">
                 <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center text-primary mx-auto mb-6">
                   <span className="font-serif text-xl">01</span>
@@ -192,6 +191,16 @@ const About: React.FC = () => {
                 <h3 className="font-serif text-lg mb-3">Implementation</h3>
                 <p className="text-sm text-muted-foreground">
                   We coordinate with contractors and vendors, overseeing installation to ensure every detail meets our exacting standards.
+                </p>
+              </div>
+
+              <div className="text-center p-6">
+                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center text-primary mx-auto mb-6">
+                  <span className="font-serif text-xl">05</span>
+                </div>
+                <h3 className="font-serif text-lg mb-3">Completion</h3>
+                <p className="text-sm text-muted-foreground">
+                  We conduct final inspections and ensure every detail is perfect before handing over your completed space.
                 </p>
               </div>
             </div>

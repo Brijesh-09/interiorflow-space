@@ -9,6 +9,7 @@ import daughters_bedroom from '../assets/daughters_bedroom.jpg';
 import common_bathroom from '../assets/common_bathroom.jpg';
 import living_tv from '../assets/living_tv.jpg';
 import saijalhall from '../assets/saijalhall.jpg';
+import MDoffice from '../assets/MD.jpg';
 // Sample data
 const allProjects = [
   {
@@ -52,13 +53,13 @@ const allProjects = [
         description: 'A spacious family residence that balances functionality with modern aesthetics, creating a warm and inviting atmosphere.',
      image: saijalhall,
    },
-  // {
-  //   id: 6,
-  //   title: 'Artisanal Café Design',
-  //   category: 'Commercial',
-  //   description: 'A distinctive café interior that reflects the brand\'s commitment to craft coffee in a welcoming environment.',
-  //   // image: 'https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?q=80&w=2070&auto=format&fit=crop'
-  // },
+  {
+    id: 6,
+    title: '2500 SQ FEET OFFICE IN THANE',
+    category: 'Commercial',
+    description: 'A distinctive office interior that reflects the brand\'s commitment to craftsmanship and creates a welcoming, productive environment',
+     image: MDoffice,
+  },
   // {
   //   id: 7,
   //   title: 'Mountain Retreat',

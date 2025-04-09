@@ -102,7 +102,7 @@ const Index: React.FC = () => {
                 <span className="text-xs uppercase tracking-wider text-muted-foreground mb-3 inline-block">About Us</span>
                 <h2 className="text-3xl md:text-4xl font-serif mb-6">Creating Exceptional Living Spaces</h2>
                 <p className="text-muted-foreground mb-6">
-                At SAATELIER, we believe that extraordinary spaces tell compelling stories. Our design philosophy seamlessly integrates functionality, aesthetics, and each client's unique personality to create interiors that inspire.We are professionals who transform your spaces into a canvas, crafting a home that embodies comfort and warmth. With hands-on experience in the field, we've worked alongside designers and architects to create inviting and personalized living spaces.
+                AtS.A. ATELIAR, we believe that extraordinary spaces tell compelling stories. Our design philosophy seamlessly integrates functionality, aesthetics, and each client's unique personality to create interiors that inspire.We are professionals who transform your spaces into a canvas, crafting a home that embodies comfort and warmth. With hands-on experience in the field, we've worked alongside designers and architects to create inviting and personalized living spaces.
                 </p>
                 {/* <p className="mb-8">
                   With over 15 years of experience in residential and commercial design, our team brings expertise, 

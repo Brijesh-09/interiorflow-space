@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowDown, ArrowRight } from 'lucide-react';
@@ -19,7 +20,6 @@ const featuredProjects = [
     category: 'Residential',
     description: 'Create a serene girls bedroom with Japandi and Wabi Sabi influences, blending minimalist elegance and rustic charm. Use natural materials, simple furniture, and subtle pops of color to embrace imperfection and craftsmanship.',
     image: daughters_room,
-  //  image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop',
     featured: true
   },
   {
@@ -27,9 +27,9 @@ const featuredProjects = [
     title: 'Contemporary Family Home',
     category: 'Residential',
     featured: true,
-        description: 'A spacious family residence that balances functionality with modern aesthetics, creating a warm and inviting atmosphere.',
-     image: saijalhall,
-   },
+    description: 'A spacious family residence that balances functionality with modern aesthetics, creating a warm and inviting atmosphere.',
+    image: saijalhall,
+  },
 ];
 
 const Index: React.FC = () => {
@@ -73,8 +73,9 @@ const Index: React.FC = () => {
           </div>
           
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif mb-4 animate-fade-in" style={{ animationDelay: '0.3s' }}>
-              Transform Your Space
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif mb-4 animate-fade-in relative group overflow-hidden" style={{ animationDelay: '0.3s' }}>
+              <span className="bg-clip-text text-transparent bg-gold-gradient animate-morph inline-block">Transform</span> Your Space
+              <span className="absolute -bottom-2 left-0 w-0 h-[2px] bg-gold-gradient group-hover:w-full transition-all duration-1000"></span>
             </h1>
             <p className="max-w-xl text-lg md:text-xl mb-8 animate-fade-in" style={{ animationDelay: '0.6s' }}>
             Enhancing interiors with intentional design and a keen eye for detail.
@@ -82,7 +83,7 @@ const Index: React.FC = () => {
             <div className="space-x-4 animate-fade-in" style={{ animationDelay: '0.9s' }}>
               <Link 
                 to="/projects" 
-                className="inline-flex items-center px-6 py-3 bg-primary text-primary-foreground text-sm font-medium transition-all hover:bg-primary/90"
+                className="premium-button-filled inline-flex items-center"
               >
                 View Our Work <ArrowRight size={16} className="ml-2" />
               </Link>
@@ -100,19 +101,17 @@ const Index: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div>
                 <span className="text-xs uppercase tracking-wider text-muted-foreground mb-3 inline-block">About Us</span>
-                <h2 className="text-3xl md:text-4xl font-serif mb-6">Creating Exceptional Living Spaces</h2>
+                <h2 className="text-3xl md:text-4xl font-serif mb-6 decorated-title animate-fade-in">Creating Exceptional Living Spaces</h2>
                 <p className="text-muted-foreground mb-6">
                 AtS.A. ATELIAR, we believe that extraordinary spaces tell compelling stories. Our design philosophy seamlessly integrates functionality, aesthetics, and each client's unique personality to create interiors that inspire.We are professionals who transform your spaces into a canvas, crafting a home that embodies comfort and warmth. With hands-on experience in the field, we've worked alongside designers and architects to create inviting and personalized living spaces.
                 </p>
-                {/* <p className="mb-8">
-                  With over 15 years of experience in residential and commercial design, our team brings expertise, 
-                  creativity, and attention to detail to every project.
-                </p> */}
                 <Link 
                   to="/about" 
-                  className="inline-flex items-center text-sm font-medium text-primary hover:underline"
+                  className="inline-flex items-center text-sm font-medium text-primary hover:underline relative group"
                 >
-                  Learn more about our approach <ArrowRight size={16} className="ml-2" />
+                  <span>Learn more about our approach</span> 
+                  <ArrowRight size={16} className="ml-2 transition-transform group-hover:translate-x-1" />
+                  <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-primary group-hover:w-full transition-all duration-300"></span>
                 </Link>
               </div>
               
@@ -133,7 +132,7 @@ const Index: React.FC = () => {
           <div className="container mx-auto">
             <div className="text-center mb-16">
               <span className="text-xs uppercase tracking-wider text-muted-foreground mb-3 inline-block">Our Portfolio</span>
-              <h2 className="text-3xl md:text-4xl font-serif mb-6">Featured Projects</h2>
+              <h2 className="text-3xl md:text-4xl font-serif mb-6 decorated-title animate-fade-in">Featured Projects</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
                 Explore our collection of thoughtfully designed spaces that reflect our commitment to 
                 quality, innovation, and the unique vision of each client.
@@ -158,7 +157,7 @@ const Index: React.FC = () => {
             <div className="text-center mt-16">
               <Link 
                 to="/projects" 
-                className="inline-flex items-center px-6 py-3 border border-primary bg-transparent hover:bg-primary hover:text-primary-foreground transition-colors text-sm font-medium"
+                className="premium-button inline-flex items-center"
               >
                 View All Projects <ArrowRight size={16} className="ml-2" />
               </Link>
@@ -180,14 +179,14 @@ const Index: React.FC = () => {
           
           <div className="container mx-auto relative z-10 px-6">
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl font-serif mb-6">Transform Your Vision Into Reality</h2>
+              <h2 className="text-3xl md:text-4xl font-serif mb-6 animate-fade-in">Transform Your Vision Into Reality</h2>
               <p className="text-muted-foreground mb-10">
                 Whether you're renovating, building from scratch, or simply refreshing your space, 
                 we're here to bring your vision to life with expertise and precision.
               </p>
               <Link 
                 to="/contact" 
-                className="inline-flex items-center px-8 py-4 bg-primary text-primary-foreground text-sm font-medium transition-all hover:bg-primary/90"
+                className="premium-button-filled inline-flex items-center"
               >
                 Start Your Project <ArrowRight size={16} className="ml-2" />
               </Link>

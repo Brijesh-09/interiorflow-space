@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
 
 @tailwind base;
@@ -106,7 +107,7 @@
   }
 
   .decorated-title {
-    @apply relative inline-block after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-12 after:h-[2px] after:bg-accent;
+    @apply relative inline-block after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-12 after:h-[2px] after:bg-accent after:animate-pulse;
   }
 }
 
@@ -147,4 +148,64 @@ html {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #b59d5e;
+}
+
+/* Text highlight color */
+::selection {
+  background: rgba(186, 161, 112, 0.3);
+  color: #baa170;
+}
+
+/* Custom animations */
+@keyframes underline-expand {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+.animate-underline {
+  position: relative;
+}
+
+.animate-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #baa170;
+  transition: width 0.3s ease;
+}
+
+.animate-underline:hover::after {
+  width: 100%;
+}
+
+/* Text reveal animation */
+.reveal-text {
+  position: relative;
+  overflow: hidden;
+}
+
+.reveal-text span {
+  display: block;
+  transform: translateY(100%);
+  transition: transform 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.reveal-text.visible span {
+  transform: translateY(0);
+}
+
+/* Image zoom on hover */
+.zoom-on-hover {
+  overflow: hidden;
+}
+
+.zoom-on-hover img {
+  transition: transform 0.7s ease;
+}
+
+.zoom-on-hover:hover img {
+  transform: scale(1.05);
 }

@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
@@ -10,6 +11,7 @@ import common_bathroom from '../assets/common_bathroom.jpg';
 import living_tv from '../assets/living_tv.jpg';
 import saijalhall from '../assets/saijalhall.jpg';
 import MDoffice from '../assets/MD.jpg';
+
 // Sample data
 const allProjects = [
   {
@@ -18,7 +20,6 @@ const allProjects = [
     category: 'Residential',
     description: 'Create a serene girls bedroom with Japandi and Wabi Sabi influences, blending minimalist elegance and rustic charm. Use natural materials, simple furniture, and subtle pops of color to embrace imperfection and craftsmanship.',
     image: daughters_room,
-  //  image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop',
     featured: true
   },
   {
@@ -27,7 +28,6 @@ const allProjects = [
     category: 'Residential',
     description: 'Create a modern Japandi bedroom with a mix of traditional and contemporary elements. Use natural materials, simple furniture, and subtle pops of color to embrace imperfection and craftsmanship.',
     image: daughters_bedroom,
-    // image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=1932&auto=format&fit=crop'
   },
   {
     id: 3,
@@ -35,7 +35,6 @@ const allProjects = [
     category: 'Commercial',
     description: 'Create a modern office washroom with a mix of traditional and contemporary elements. Use natural materials, simple furniture, and subtle pops of color to embrace imperfection and craftsmanship.',
     image: common_bathroom,
-    // image: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=2069&auto=format&fit=crop'
   },
   {
     id: 4,
@@ -43,45 +42,22 @@ const allProjects = [
     category: 'Residential',
     description: 'Create a living room with a mix of traditional and contemporary elements. Use natural materials, simple furniture, and subtle pops of color to embrace imperfection and craftsmanship.',
     image: living_tv,
-    // image: 'https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?q=80&w=2071&auto=format&fit=crop'
   },
   {
     id: 5,
     title: 'Contemporary Family Home',
     category: 'Residential',
     featured: true,
-        description: 'A spacious family residence that balances functionality with modern aesthetics, creating a warm and inviting atmosphere.',
-     image: saijalhall,
-   },
+    description: 'A spacious family residence that balances functionality with modern aesthetics, creating a warm and inviting atmosphere.',
+    image: saijalhall,
+  },
   {
     id: 6,
     title: '2500 SQ FEET OFFICE IN THANE',
     category: 'Commercial',
     description: 'A distinctive office interior that reflects the brand\'s commitment to craftsmanship and creates a welcoming, productive environment',
-     image: MDoffice,
+    image: MDoffice,
   },
-  // {
-  //   id: 7,
-  //   title: 'Mountain Retreat',
-  //   category: 'Residential',
-  //   description: 'A cozy yet luxurious mountain home that embraces natural materials and panoramic views.',
-  //   // image: 'https://images.unsplash.com/photo-1604014237800-1c9102c219da?q=80&w=2070&auto=format&fit=crop',
-  //   featured: true
-  // },
-  // {
-  //   id: 8,
-  //   title: 'Corporate Headquarters',
-  //   category: 'Commercial',
-  //   description: 'A comprehensive design for a corporate headquarters that embodies the company\'s values and enhances workplace culture.',
-  //   // image: 'https://images.unsplash.com/photo-1613963931023-5dc59437c8a6?q=80&w=1776&auto=format&fit=crop'
-  // },
-  // {
-  //   id: 9,
-  //   title: 'Urban Loft Conversion',
-  //   category: 'Residential',
-  //   description: 'Transformation of an industrial loft space into a sophisticated urban dwelling with character and style.',
-  //   // image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2070&auto=format&fit=crop'
-  // }
 ];
 
 const categories = ['All', 'Residential', 'Commercial'];
@@ -117,9 +93,9 @@ const Projects: React.FC = () => {
         {/* Hero Section */}
         <section className="pt-32 pb-20 bg-secondary/30">
           <div className="container mx-auto px-6 md:px-12">
-            <div className="max-w-4xl">
+            <div className="max-w-4xl animate-fade-in">
               <span className="text-xs uppercase tracking-wider text-muted-foreground mb-3 inline-block">Our Portfolio</span>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif mb-6">Showcasing Our Finest Work</h1>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif mb-6 decorated-title">Showcasing Our Finest Work</h1>
               <p className="text-lg text-muted-foreground">
                 Browse our collection of projects across residential, commercial, and hospitality sectors.
               </p>
@@ -131,7 +107,7 @@ const Projects: React.FC = () => {
         <section className="py-20">
           <div className="container mx-auto px-6 md:px-12">
             {/* Category Filters */}
-            <div className="flex flex-wrap gap-4 mb-12 justify-center">
+            <div className="flex flex-wrap gap-4 mb-12 justify-center animate-fade-in" style={{ animationDelay: '0.3s' }}>
               {categories.map(category => (
                 <button
                   key={category}
@@ -161,78 +137,6 @@ const Projects: React.FC = () => {
             )}
           </div>
         </section>
-        
-        {/* Testimonials Section */}
-        {/* <section className="py-20 bg-secondary/30">
-          <div className="container mx-auto px-6 md:px-12">
-            <div className="text-center max-w-3xl mx-auto mb-16">
-              <span className="text-xs uppercase tracking-wider text-muted-foreground mb-3 inline-block">Testimonials</span>
-              <h2 className="text-3xl md:text-4xl font-serif mb-6">What Our Clients Say</h2>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="p-8 bg-background border border-border">
-                <p className="italic text-muted-foreground mb-6">
-                  "S.A. Atelier & Co. transformed our home beyond our expectations. Their ability to understand our 
-                  lifestyle and translate it into a beautiful, functional design is remarkable."
-                </p>
-                <div className="flex items-center">
-                  <div className="w-10 h-10 rounded-full overflow-hidden mr-3">
-                    <img 
-                      src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1964&auto=format&fit=crop" 
-                      alt="Client" 
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div>
-                    <p className="font-medium text-sm">Emma Thompson</p>
-                    <p className="text-xs text-muted-foreground">Residential Client</p>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="p-8 bg-background border border-border">
-                <p className="italic text-muted-foreground mb-6">
-                  "Working with the S.A. Atelier & Co. team was a seamless experience from start to finish. Their attention 
-                  to detail and commitment to excellence is evident in every aspect of our office design."
-                </p>
-                <div className="flex items-center">
-                  <div className="w-10 h-10 rounded-full overflow-hidden mr-3">
-                    <img 
-                      src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1974&auto=format&fit=crop" 
-                      alt="Client" 
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div>
-                    <p className="font-medium text-sm">Michael Chen</p>
-                    <p className="text-xs text-muted-foreground">Commercial Client</p>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="p-8 bg-background border border-border">
-                <p className="italic text-muted-foreground mb-6">
-                  "The team's creativity and problem-solving abilities are unmatched. They took a challenging space 
-                  and turned it into a stunning environment that perfectly captures our brand essence."
-                </p>
-                <div className="flex items-center">
-                  <div className="w-10 h-10 rounded-full overflow-hidden mr-3">
-                    <img 
-                      src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=1974&auto=format&fit=crop" 
-                      alt="Client" 
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div>
-                    <p className="font-medium text-sm">Sophia Rodriguez</p>
-                    <p className="text-xs text-muted-foreground">Hospitality Client</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section> */}
         
         <Footer />
       </div>

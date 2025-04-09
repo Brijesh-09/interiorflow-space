@@ -1,3 +1,4 @@
+
 import React, { useRef, useEffect } from 'react';
 import { ArrowUpRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -75,9 +76,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           </p>
           
           <div className="flex items-center justify-between mt-auto">
-            <span className="text-xs font-medium inline-flex items-center text-accent transition-all group-hover:translate-x-1">
+            <Link to={`/projects/${id}`} className="text-xs font-medium inline-flex items-center text-accent transition-all group-hover:translate-x-1">
               View Project <ArrowUpRight size={14} className="ml-1" />
-            </span>
+            </Link>
           </div>
         </div>
         

@@ -40,7 +40,7 @@ const values = [
   }
 ];
 
-const About: React.FC = () => {
+export const About = () => {
   const [loading, setLoading] = useState(true);
   
   const handleFinishedLoading = () => {
@@ -57,6 +57,11 @@ const About: React.FC = () => {
       
       <div className={`transition-opacity duration-1000 ${loading ? 'opacity-0' : 'opacity-100'}`}>
         <Navbar />
+        
+        <div className="container mx-auto px-4 py-16">
+          <h1 className="text-4xl font-bold mb-8">About Us</h1>
+          <p className="text-lg">Learn more about our team and philosophy</p>
+        </div>
         
         {/* Hero Section */}
         <section className="pt-32 pb-20 bg-secondary/30">

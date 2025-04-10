@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
@@ -6,7 +5,7 @@ import ContactForm from '../components/ui/ContactForm';
 import LoadingScreen from '../components/ui/LoadingScreen';
 import { Mail, MapPin, Phone, Clock, Instagram, Facebook, Linkedin } from 'lucide-react';
 
-const Contact: React.FC = () => {
+export const Contact = () => {
   const [loading, setLoading] = useState(true);
   
   const handleFinishedLoading = () => {
@@ -63,7 +62,7 @@ const Contact: React.FC = () => {
                     <div>
                       <h3 className="font-medium mb-1">Our Studio</h3>
                       <address className="not-italic text-muted-foreground">
-                        c/703 Olympia Building<br />
+                        Olympia Building<br />
                         Mumbai , India <br />
                       </address>
                     </div>

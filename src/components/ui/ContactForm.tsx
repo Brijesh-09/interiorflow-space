@@ -22,7 +22,7 @@ const ContactForm: React.FC = () => {
     setLoading(true);
   
     try {
-      const response = await fetch('https://formsubmit.co/info@saatelier.in', {
+      const response = await fetch('https://formsubmit.co/d3b063c6b97a838293e83e8af819c0dds', {
         //comment
         method: 'POST',
         headers: {

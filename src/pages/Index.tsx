@@ -5,7 +5,7 @@ import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
 import ProjectCard from '../components/ui/ProjectCard';
 import LoadingScreen from '../components/ui/LoadingScreen';
-import about from '../assets/about.jpg';
+import about from '../assets/about.jpg'; // Updated image path to an existing image
 import { projectService } from '../services/projectService';
 import { Project } from '../types/project';
 

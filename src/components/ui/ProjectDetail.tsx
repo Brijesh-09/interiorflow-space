@@ -1,111 +1,121 @@
+
 import React from 'react';
-import { useParams } from 'react-router-dom';
-import { projectService } from '../../services/projectService';
-import { ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { ArrowLeft, Clock, MapPin, Award, Users } from 'lucide-react';
+import { Project } from '@/types/project';
+import { Button } from './button';
 
-const ProjectDetail: React.FC = () => {
-  const { id } = useParams<{ id: string }>();
-  const project = projectService.getProjectById(Number(id));
+interface ProjectDetailProps {
+  project: Project;
+}
 
+const ProjectDetail: React.FC<ProjectDetailProps> = ({ project }) => {
   if (!project) {
-    return (
-      <div className="container mx-auto px-6 md:px-12 py-20 text-center">
-        <h1 className="text-2xl mb-4">Project not found</h1>
-        <Link to="/projects" className="text-accent hover:underline">
-          Back to Projects
-        </Link>
-      </div>
-    );
+    return <div className="py-20 text-center">Project not found</div>;
   }
 
-  const primaryImage = project.images.find(img => img.type === 'primary');
-  const additionalImages = project.images.filter(img => img.type === 'additional');
-
   return (
-    <div className="container mx-auto px-6 md:px-12 py-20">
-      <Link 
-        to="/projects" 
-        className="inline-flex items-center text-sm text-muted-foreground hover:text-primary mb-8"
-      >
-        <ArrowLeft size={16} className="mr-2" />
-        Back to Projects
-      </Link>
+    <div className="max-w-6xl mx-auto px-6 py-12">
+      {/* Header with navigation */}
+      <div className="mb-8">
+        <Link to="/projects" className="inline-flex items-center text-sm font-medium text-muted-foreground hover:text-accent mb-4">
+          <ArrowLeft className="mr-2 h-4 w-4" />
+          Back to Projects
+        </Link>
+        <h1 className="text-4xl md:text-5xl font-serif mb-4">{project.title}</h1>
+        <p className="text-xl text-muted-foreground max-w-3xl">{project.description}</p>
+      </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-        <div>
-          <h1 className="text-4xl md:text-5xl font-serif mb-6">{project.title}</h1>
-          <div className="flex flex-wrap gap-4 mb-6">
-            <span className="text-xs uppercase tracking-wider text-muted-foreground">
-              {project.category}
-            </span>
-            <span className="text-xs uppercase tracking-wider text-muted-foreground">
-              {project.year}
-            </span>
-            <span className="text-xs uppercase tracking-wider text-muted-foreground">
-              {project.location}
-            </span>
-          </div>
-          <p className="text-lg text-muted-foreground mb-8">
-            {project.fullDescription}
+      {/* Main image */}
+      <div className="mb-12 overflow-hidden rounded-lg shadow-lg">
+        <img
+          src={project.images[0]}
+          alt={project.title}
+          className="w-full h-auto object-cover"
+        />
+      </div>
+
+      {/* Project details */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <div className="bg-secondary/30 p-6 rounded-lg">
+          <h3 className="font-serif text-lg mb-4">Project Details</h3>
+          <ul className="space-y-3">
+            <li className="flex items-center">
+              <MapPin className="mr-3 h-5 w-5 text-accent" />
+              <span>{project.location || 'Bengaluru, India'}</span>
+            </li>
+            <li className="flex items-center">
+              <Clock className="mr-3 h-5 w-5 text-accent" />
+              <span>{project.duration || '3 months'}</span>
+            </li>
+            <li className="flex items-center">
+              <Award className="mr-3 h-5 w-5 text-accent" />
+              <span>{project.category}</span>
+            </li>
+            <li className="flex items-center">
+              <Users className="mr-3 h-5 w-5 text-accent" />
+              <span>{project.client || 'Residential Client'}</span>
+            </li>
+          </ul>
+        </div>
+
+        <div className="md:col-span-2">
+          <h3 className="font-serif text-2xl mb-4">Project Overview</h3>
+          <p className="text-muted-foreground mb-6">
+            {project.description}
           </p>
-        </div>
 
-        {primaryImage && (
-          <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
-            <img 
-              src={primaryImage.url} 
-              alt={primaryImage.alt}
-              className="w-full h-full object-cover"
-            />
+          <div className="space-y-6">
+            <div>
+              <h4 className="font-serif text-lg mb-2">The Challenge</h4>
+              <p className="text-muted-foreground">
+                {project.challenges || "The client needed to transform their space while maintaining functionality and reflecting their personal style and needs."}
+              </p>
+            </div>
+            <div>
+              <h4 className="font-serif text-lg mb-2">Our Approach</h4>
+              <p className="text-muted-foreground">
+                {project.approach || "We worked closely with the client to understand their vision and created a design that blended aesthetics with practicality."}
+              </p>
+            </div>
+            <div>
+              <h4 className="font-serif text-lg mb-2">The Result</h4>
+              <p className="text-muted-foreground">
+                {project.results || "A beautifully transformed space that perfectly balances style, comfort, and functionality while meeting all the client's requirements."}
+              </p>
+            </div>
           </div>
-        )}
-      </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-        <div>
-          <h3 className="font-serif text-xl mb-4">Challenge</h3>
-          <p className="text-muted-foreground">{project.challenge}</p>
-        </div>
-        <div>
-          <h3 className="font-serif text-xl mb-4">Solution</h3>
-          <p className="text-muted-foreground">{project.solution}</p>
-        </div>
-        <div>
-          <h3 className="font-serif text-xl mb-4">Outcome</h3>
-          <p className="text-muted-foreground">{project.outcome}</p>
         </div>
       </div>
 
-      {additionalImages.length > 0 && (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-          {additionalImages.map((image, index) => (
-            <div key={index} className="relative aspect-[4/3] overflow-hidden rounded-lg">
-              <img 
-                src={image.url} 
-                alt={image.alt}
-                className="w-full h-full object-cover"
+      {/* Image gallery */}
+      <div>
+        <h3 className="font-serif text-2xl mb-6">Project Gallery</h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {project.images.map((image, index) => (
+            <div key={index} className="overflow-hidden rounded-lg shadow-md transition-transform duration-300 hover:scale-[1.02]">
+              <img
+                src={image}
+                alt={`${project.title} - Image ${index + 1}`}
+                className="w-full h-64 object-cover"
               />
             </div>
           ))}
         </div>
-      )}
+      </div>
 
-      {project.features.length > 0 && (
-        <div className="mb-16">
-          <h2 className="text-3xl font-serif mb-8">Key Features</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {project.features.map((feature, index) => (
-              <div key={index} className="p-6 bg-secondary/30 rounded-lg">
-                <h3 className="font-serif text-lg mb-2">{feature.title}</h3>
-                <p className="text-muted-foreground">{feature.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
+      {/* CTA */}
+      <div className="mt-16 text-center">
+        <h3 className="font-serif text-2xl mb-4">Ready to transform your space?</h3>
+        <p className="text-muted-foreground max-w-2xl mx-auto mb-6">
+          Let's collaborate to create a space that reflects your personality and meets your needs.
+        </p>
+        <Button asChild className="mt-2" variant="premium">
+          <Link to="/contact">Start Your Project</Link>
+        </Button>
+      </div>
     </div>
   );
 };
 
-export default ProjectDetail; 
+export default ProjectDetail;

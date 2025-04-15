@@ -5,6 +5,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import LoadingScreen from "./components/ui/LoadingScreen";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
@@ -21,7 +22,7 @@ const App = () => {
     // Preload images and setup
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 800);
+    }, 2500); // Slightly longer loading time to appreciate the animation
 
     return () => clearTimeout(timer);
   }, []);
@@ -29,6 +30,7 @@ const App = () => {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
+        {loading && <LoadingScreen onFinished={() => setLoading(false)} />}
         <Toaster />
         <Sonner />
         <BrowserRouter>

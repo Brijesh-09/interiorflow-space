@@ -17,7 +17,7 @@ const teamMembers = [
     name: 'Ayushi Jain',
     role: 'Creative Director',
     image: ayushi,
-    bio: 'Alex brings innovative vision and creative direction to every project. His background in architecture and fine arts informs his holistic approach to design, seamlessly blending structure, materials, and artistic elements.'
+    bio: '2 years of experience in crafting elegant, functional spaces tailored to your vision.'
   }
 ];
 

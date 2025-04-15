@@ -80,7 +80,7 @@ export const Contact = () => {
                     <Mail className="mr-4 text-primary flex-shrink-0" />
                     <div>
                       <h3 className="font-medium mb-1">Email</h3>
-                      <p className="text-muted-foreground">saatelier19@gmail.com</p>
+                      <p className="text-muted-foreground">info@saatelier.in</p>
                     </div>
                   </div>
                   
@@ -101,7 +101,7 @@ export const Contact = () => {
                     <a href="https://www.instagram.com/saatelierco?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" className="p-3 bg-secondary/50 rounded-full hover:bg-primary hover:text-primary-foreground transition-colors" aria-label="Instagram">
                       <Instagram size={20} />
                     </a>
-                    <a href="mailto:SAatelier19@gmail.com" className="p-2 bg-background rounded-full hover:bg-primary hover:text-primary-foreground transition-colors" aria-label="Email">
+                    <a href="mailto:info@saatelier.in" className="p-2 bg-background rounded-full hover:bg-primary hover:text-primary-foreground transition-colors" aria-label="Email">
                 <Mail size={18} />
               </a>
                     {/* <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="p-3 bg-secondary/50 rounded-full hover:bg-primary hover:text-primary-foreground transition-colors" aria-label="LinkedIn">

@@ -15,11 +15,6 @@ export interface Project {
   category: 'Residential' | 'Commercial';
   featured: boolean;
   description: string;
-  fullDescription: string;
-  challenge: string;
-  solution: string;
-  outcome: string;
-  year: string;
   location: string;
   images: ProjectImage[];
   features: ProjectFeature[];

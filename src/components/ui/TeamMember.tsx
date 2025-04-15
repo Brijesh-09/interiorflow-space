@@ -49,7 +49,7 @@ const TeamMember: React.FC<TeamMemberProps> = ({ name, role, image, bio }) => {
       
       <h3 className="font-serif text-lg group-hover:text-primary transition-colors">{name}</h3>
       <p className="text-sm text-muted-foreground mb-3">{role}</p>
-      <p className="text-sm line-clamp-3">{bio}</p>
+      <p className="text-sm">{bio}</p>
     </div>
   );
 };

@@ -65,10 +65,11 @@ const Index: React.FC = () => {
           </div>
           
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif mb-4 animate-fade-in relative group overflow-hidden" style={{ animationDelay: '0.3s' }}>
-              <span className="bg-clip-text text-transparent bg-gold-gradient animate-morph inline-block">Transform</span> Your Space
-              <span className="absolute -bottom-2 left-0 w-0 h-[2px] bg-gold-gradient group-hover:w-full transition-all duration-1000"></span>
-            </h1>
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif mb-4 animate-fade-in relative group overflow-hidden" style={{ animationDelay: '0.3s' }}>
+  <span className="bg-clip-text text-transparent bg-gold-gradient inline-block">Transform</span> Your Space
+  <span className="absolute -bottom-2 left-0 w-0 h-[2px] bg-gold-gradient group-hover:w-full"></span>
+</h1>
+
             <p className="max-w-xl text-lg md:text-xl mb-8 animate-fade-in" style={{ animationDelay: '0.6s' }}>
               Enhancing interiors with intentional design and a keen eye for detail.
             </p>

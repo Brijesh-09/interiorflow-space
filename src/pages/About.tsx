@@ -4,6 +4,7 @@ import Footer from '../components/layout/Footer';
 import TeamMember from '../components/ui/TeamMember';
 import LoadingScreen from '../components/ui/LoadingScreen';
 import  motu from '../assets/motu.jpeg';
+import ayushi from '../assets/ayushi.jpeg'
 
 // Sample data
 const teamMembers = [
@@ -11,12 +12,11 @@ const teamMembers = [
     name: 'Saijal Srivastava',
     role: 'Principal Designer & Founder',
     image: motu,
-    bio: 'With over 3 years of experience in interior design, Saijal has led projects across residential, commercial sectors. Her design philosophy combines functionality with aesthetic beauty, creating spaces that reflect each client\'s unique personality and needs.'
-  },
+    bio: 'Designs timeless, elegant homes that tell each client’s unique story. With 2years of experience and a refined, personal approach, she creates layered, character-rich spaces through thoughtful use of material, color, and form.'},
   {
     name: 'Alexander Chen',
     role: 'Creative Director',
-    image: 'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=2070&auto=format&fit=crop',
+    image: ayushi,
     bio: 'Alex brings innovative vision and creative direction to every project. His background in architecture and fine arts informs his holistic approach to design, seamlessly blending structure, materials, and artistic elements.'
   }
 ];
@@ -223,7 +223,7 @@ export const About = () => {
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-4 md:grid-cols-4  h-auto gap-8">
               {teamMembers.map((member, index) => (
                 <TeamMember key={index} {...member} />
               ))}

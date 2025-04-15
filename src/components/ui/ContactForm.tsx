@@ -20,22 +20,37 @@ const ContactForm: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    
-    toast.success("Message sent successfully! We'll be in touch soon.", {
-      position: "bottom-right",
-    });
-    
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      message: '',
-    });
-    
-    setLoading(false);
+  
+    try {
+      const response = await fetch('https://formsubmit.co/info@saatelier.in', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
+          _captcha: false,
+          _template: 'table',
+        }),
+      });
+  
+      if (response.ok) {
+        toast.success("Message sent successfully! We'll be in touch soon.", {
+          position: "bottom-right",
+        });
+        setFormData({ name: '', email: '', phone: '', message: '' });
+      } else {
+        toast.error("Something went wrong. Please try again later.");
+      }
+    } catch (error) {
+      toast.error("Error submitting the form.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (

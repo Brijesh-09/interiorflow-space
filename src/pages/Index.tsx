@@ -5,9 +5,7 @@ import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
 import ProjectCard from '../components/ui/ProjectCard';
 import LoadingScreen from '../components/ui/LoadingScreen';
-import about from '../assets/about.jpg';
-import daughters_room from '../assets/MAIN.jpg';
-import saijalhall from '../assets/Project_6/saijalhall.jpg';
+import about from '../assets/ayushi.jpeg'; // Updated image path to an existing image
 import { projectService } from '../services/projectService';
 import { Project } from '../types/project';
 

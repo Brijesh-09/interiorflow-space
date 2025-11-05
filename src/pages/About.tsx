@@ -13,12 +13,12 @@ const teamMembers = [
     role: 'Principal Designer & Founder',
     image: motu,
     bio: 'Designs timeless, elegant homes that tell each client’s unique story. With 2years of experience and a refined, personal approach, she creates layered, character-rich spaces through thoughtful use of material, color, and form.'},
-  {
-    name: 'Ayushi Jain',
-    role: 'Creative Director',
-    image: ayushi,
-    bio: '2 years of experience in crafting elegant, functional spaces tailored to your vision.'
-  }
+  // {
+  //   name: 'Ayushi Jain',
+  //   role: 'Creative Director',
+  //   image: ayushi,
+  //   bio: '2 years of experience in crafting elegant, functional spaces tailored to your vision.'
+  // }
 ];
 
 const values = [

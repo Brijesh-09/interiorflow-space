@@ -29,8 +29,8 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project }) => {
       {/* Main image */}
       <div className="mb-12 overflow-hidden rounded-lg shadow-lg">
         <img
-          src={project.images[0]}
-          alt={project.title}
+          src={project.images[0]?.url}
+          alt={project.images[0]?.alt || project.title}
           className="w-full h-auto object-cover"
         />
       </div>
@@ -46,7 +46,7 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project }) => {
             </li>
             <li className="flex items-center">
               <Clock className="mr-3 h-5 w-5 text-accent" />
-              <span>{project.duration || '3 months'}</span>
+              <span>{'3 months'}</span>
             </li>
             <li className="flex items-center">
               <Award className="mr-3 h-5 w-5 text-accent" />
@@ -54,7 +54,7 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project }) => {
             </li>
             <li className="flex items-center">
               <Users className="mr-3 h-5 w-5 text-accent" />
-              <span>{project.client || 'Residential Client'}</span>
+              <span>{'Residential Client'}</span>
             </li>
           </ul>
         </div>
@@ -69,19 +69,19 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project }) => {
             <div>
               <h4 className="font-serif text-lg mb-2">The Challenge</h4>
               <p className="text-muted-foreground">
-                {project.challenges || "The client needed to transform their space while maintaining functionality and reflecting their personal style and needs."}
+                {"The client needed to transform their space while maintaining functionality and reflecting their personal style and needs."}
               </p>
             </div>
             <div>
               <h4 className="font-serif text-lg mb-2">Our Approach</h4>
               <p className="text-muted-foreground">
-                {project.approach || "We worked closely with the client to understand their vision and created a design that blended aesthetics with practicality."}
+                {"We worked closely with the client to understand their vision and created a design that blended aesthetics with practicality."}
               </p>
             </div>
             <div>
               <h4 className="font-serif text-lg mb-2">The Result</h4>
               <p className="text-muted-foreground">
-                {project.results || "A beautifully transformed space that perfectly balances style, comfort, and functionality while meeting all the client's requirements."}
+                {"A beautifully transformed space that perfectly balances style, comfort, and functionality while meeting all the client's requirements."}
               </p>
             </div>
           </div>
@@ -95,8 +95,8 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project }) => {
           {project.images.map((image, index) => (
             <div key={index} className="overflow-hidden rounded-lg shadow-md transition-transform duration-300 hover:scale-[1.02]">
               <img
-                src={image}
-                alt={`${project.title} - Image ${index + 1}`}
+                src={image.url}
+                alt={image.alt || `${project.title} - Image ${index + 1}`}
                 className="w-full h-64 object-cover"
               />
             </div>

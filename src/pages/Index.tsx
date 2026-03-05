@@ -102,7 +102,7 @@ const Index: React.FC = () => {
             className="parallax-bg hero-mask"
             style={{ backgroundImage: `url(https://images.unsplash.com/photo-1606744824163-985d376605aa?q=80&w=1932&auto=format&fit=crop)` }}
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-background" />
+          <div className="absolute inset-0 bg-black/40" />
         </div>
 
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">

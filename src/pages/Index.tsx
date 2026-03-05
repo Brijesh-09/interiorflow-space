@@ -102,14 +102,14 @@ const Index: React.FC = () => {
             className="parallax-bg hero-mask"
             style={{ backgroundImage: `url(https://images.unsplash.com/photo-1606744824163-985d376605aa?q=80&w=1932&auto=format&fit=crop)` }}
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/10 to-background" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-background" />
         </div>
 
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif mb-4 animate-fade-in" style={{ animationDelay: '0.3s' }}>
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif mb-4 animate-fade-in text-white" style={{ animationDelay: '0.3s' }}>
             <span className="bg-clip-text text-transparent bg-gold-gradient inline-block">Transform</span> Your Space
           </h1>
-          <p className="max-w-xl text-lg md:text-xl mb-8 animate-fade-in text-foreground" style={{ animationDelay: '0.6s' }}>
+          <p className="max-w-xl text-lg md:text-xl mb-8 animate-fade-in text-white/80" style={{ animationDelay: '0.6s' }}>
             Enhancing interiors with intentional design and a keen eye for detail.
           </p>
           <div className="flex flex-wrap gap-4 justify-center animate-fade-in" style={{ animationDelay: '0.9s' }}>

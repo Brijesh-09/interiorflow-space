@@ -53,8 +53,8 @@ const services = [
 ];
 
 const stats = [
-  { number: '50+', label: 'Projects Completed' },
-  { number: '8+', label: 'Years Experience' },
+  { number: '10+', label: 'Projects Completed' },
+  { number: '2+', label: 'Years Experience' },
   { number: '100%', label: 'Client Satisfaction' },
   { number: '6', label: 'Cities Covered' },
 ];

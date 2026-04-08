@@ -43,7 +43,7 @@ const Footer: React.FC = () => {
               <p>Olympia Building</p>
               <p>Mumbai , India</p>
               <p className="mt-2">+91 7075947369 | 7977947369 </p>
-              <p>info@saatelier.in</p>
+              <p>SAatelier19@gmail.com</p>
             </address>
           </div>
         </div>

@@ -20,8 +20,8 @@ export const Contact = () => {
               Let's Design Your Space
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl">
-              Whether you're planning a luxury home interior, a commercial space, or 
-              a complete office redesign in Mumbai — we'd love to hear about your project. 
+              Whether you're planning a luxury home interior, a commercial space, or
+              a complete office redesign in Mumbai — we'd love to hear about your project.
               Reach out for a free consultation with our design team.
             </p>
           </div>
@@ -39,8 +39,8 @@ export const Contact = () => {
                 Start Your Project
               </h2>
               <p className="text-muted-foreground mb-8">
-                Tell us about your space, your vision, and your budget. 
-                We'll get back to you within 24 hours to schedule a free 
+                Tell us about your space, your vision, and your budget.
+                We'll get back to you within 24 hours to schedule a free
                 design consultation at our Mumbai studio or over a video call.
               </p>
               <ContactForm />
@@ -52,8 +52,8 @@ export const Contact = () => {
                 Visit Our Studio
               </h2>
               <p className="text-muted-foreground mb-8">
-                Our design studio is based in Mumbai. We work with residential 
-                and commercial clients across Bandra, Juhu, Worli, Powai, 
+                Our design studio is based in Mumbai. We work with residential
+                and commercial clients across Bandra, Juhu, Worli, Powai,
                 Andheri, Lower Parel, and all of Mumbai.
               </p>
 
@@ -75,7 +75,7 @@ export const Contact = () => {
                     <h3 className="font-medium mb-1">Call Us</h3>
                     <p className="text-muted-foreground">
                       <a href="tel:+917075947369" className="hover:text-primary transition-colors">
-                        +91 70759 47369
+                        +91 7045947369
                       </a>
                       {' '}|{' '}
                       <a href="tel:+917977947369" className="hover:text-primary transition-colors">
@@ -90,8 +90,8 @@ export const Contact = () => {
                   <div>
                     <h3 className="font-medium mb-1">Email Us</h3>
                     <p className="text-muted-foreground">
-                      <a href="mailto:info@saatelier.in" className="hover:text-primary transition-colors">
-                        info@saatelier.in
+                      <a href="mailto:saatelier19@gmail.com" className="hover:text-primary transition-colors">
+                        saatelier19@gmail.com
                       </a>
                     </p>
                   </div>
@@ -102,7 +102,6 @@ export const Contact = () => {
                   <div>
                     <h3 className="font-medium mb-1">Studio Hours</h3>
                     <p className="text-muted-foreground">Monday – Friday: 9:00 AM – 6:00 PM</p>
-                    <p className="text-muted-foreground">Saturday: By appointment</p>
                   </div>
                 </div>
               </div>
@@ -111,7 +110,7 @@ export const Contact = () => {
               <div>
                 <h3 className="font-medium mb-3">Follow Our Work</h3>
                 <p className="text-muted-foreground text-sm mb-4">
-                  See our latest interior design projects on Instagram — 
+                  See our latest interior design projects on Instagram —
                   from Mumbai homes to commercial spaces.
                 </p>
                 <div className="flex space-x-4">
@@ -124,8 +123,8 @@ export const Contact = () => {
                   >
                     <Instagram size={20} />
                   </a>
-                  
-                    <a href="mailto:info@saatelier.in"
+
+                  <a href="mailto:saatelier19@gmail.com"
                     className="p-3 bg-secondary/50 rounded-full hover:bg-primary hover:text-primary-foreground transition-colors"
                     aria-label="Email S.A. Atelier"
                   >
@@ -141,7 +140,7 @@ export const Contact = () => {
                   Send us a message directly on WhatsApp and we'll respond within a few hours.
                 </p>
                 <a
-                  href="https://wa.me/917075947369?text=Hi%20S.A.%20Atelier%2C%20I%27m%20interested%20in%20your%20interior%20design%20services%20in%20Mumbai."
+                  href="https://wa.me/7045947369?text=Hi%20S.A.%20Atelier%2C%20I%27m%20interested%20in%20your%20interior%20design%20services%20in%20Mumbai."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block bg-green-600 text-white px-6 py-3 text-sm rounded-lg hover:bg-green-700 transition-colors"
@@ -159,8 +158,8 @@ export const Contact = () => {
       <section className="py-8 bg-secondary/20 border-t border-gray-100">
         <div className="container mx-auto px-6 md:px-12 text-center">
           <p className="text-sm text-muted-foreground">
-            S.A. Atelier & Co. — Luxury Interior Design Studio in Mumbai. 
-            Serving clients across Bandra, Juhu, Worli, Powai, Andheri West, 
+            S.A. Atelier & Co. — Luxury Interior Design Studio in Mumbai.
+            Serving clients across Bandra, Juhu, Worli, Powai, Andheri West,
             Lower Parel, Cuffe Parade, Versova & all of Mumbai.
           </p>
         </div>

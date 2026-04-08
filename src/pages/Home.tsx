@@ -5,7 +5,6 @@ import { Project } from '../types/project';
 
 export const Home = () => {
   const [featuredProjects, setFeaturedProjects] = useState<Project[]>([]);
-  const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
@@ -20,21 +19,11 @@ export const Home = () => {
       } catch (error) {
         console.error('Error loading featured projects:', error);
         setError('Failed to load featured projects');
-      } finally {
-        setLoading(false);
       }
     };
 
     loadProjects();
   }, []);
-
-  if (loading) {
-    return (
-      <div className="container mx-auto px-4 py-16 text-center">
-        <p>Loading projects...</p>
-      </div>
-    );
-  }
 
   if (error) {
     return (

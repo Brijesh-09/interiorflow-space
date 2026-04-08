@@ -113,12 +113,13 @@ const Index: React.FC = () => {
             Enhancing interiors with intentional design and a keen eye for detail.
           </p>
           <div className="flex flex-wrap gap-4 justify-center animate-fade-in" style={{ animationDelay: '0.9s' }}>
-            <Link to="/projects" className="premium-button-filled inline-flex items-center">
+            <Link to="/projects" className="premium-button inline-flex items-center">
               View Our Work <ArrowRight size={16} className="ml-2" />
             </Link>
-            <Link to="/contact" className="premium-button inline-flex items-center">
+            <a
+              href="https://wa.me/7045947369?text=Hi%20S.A.%20Atelier%2C%20I%27m%20interested%20in%20your%20interior%20design%20services%20in%20Mumbai." className="premium-button-filled inline-flex items-center">
               Get Free Consultation <Phone size={16} className="ml-2" />
-            </Link>
+            </a>
           </div>
         </div>
 
@@ -258,7 +259,7 @@ const Index: React.FC = () => {
             <Link to="/contact" className="premium-button-filled inline-flex items-center text-base px-8 py-4">
               Book Free Consultation <ArrowRight size={18} className="ml-2" />
             </Link>
-            <a href="tel:+919876543210" className="premium-button inline-flex items-center text-base px-8 py-4">
+            <a href="tel:+917045947369" className="premium-button inline-flex items-center text-base px-8 py-4">
               <Phone size={18} className="mr-2" /> Call Us Now
             </a>
           </div>

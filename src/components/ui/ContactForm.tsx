@@ -20,25 +20,26 @@ const ContactForm: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-  
+
     try {
-      const response = await fetch('https://formsubmit.co/d3b063c6b97a838293e83e8af819c0dd', {
-        //comment
+      const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
           Accept: 'application/json',
         },
         body: JSON.stringify({
+          // TODO: Replace with your Web3Forms Access Key
+          // Get it for free at: https://web3forms.com/
+          access_key: 'ed536bf1-2cdc-48c1-b18e-f07086d7659b',
           name: formData.name,
           email: formData.email,
           phone: formData.phone,
           message: formData.message,
-          _captcha: false,
-          _template: 'table',
+          subject: 'New Submission from S.A. Atelier Contact Form',
         }),
       });
-  
+
       if (response.ok) {
         toast.success("Message sent successfully! We'll be in touch soon.", {
           position: "bottom-right",
@@ -86,7 +87,7 @@ const ContactForm: React.FC = () => {
           />
         </div>
       </div>
-      
+
       <div>
         <label htmlFor="phone" className="block text-sm font-medium mb-2">
           Phone (optional)
@@ -100,7 +101,7 @@ const ContactForm: React.FC = () => {
           className="w-full px-4 py-3 bg-secondary/30 border border-border focus:border-primary outline-none rounded-sm transition-colors"
         />
       </div>
-      
+
       <div>
         <label htmlFor="message" className="block text-sm font-medium mb-2">
           Message
@@ -115,7 +116,7 @@ const ContactForm: React.FC = () => {
           className="w-full px-4 py-3 bg-secondary/30 border border-border focus:border-primary outline-none rounded-sm transition-colors resize-none"
         ></textarea>
       </div>
-      
+
       <button
         type="submit"
         disabled={loading}

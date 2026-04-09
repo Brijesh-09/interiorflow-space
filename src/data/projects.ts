@@ -17,6 +17,21 @@ export const projects: Project[] = [
       { title: 'Flexible Layout', description: 'Modular furniture...' }
     ]
   },
+  //lakme salon
+  {
+    id: 9,
+    title: 'Lakme Salon',
+    category: 'Commercial',
+    featured: false,
+    description: 'This is Lakmé at Andheri Lokhandwala back road, where we designed and executed the space while skillfully working around multiple beams and columns. Every detail was thoughtfully planned, with a color palette aligned to Lakmé’s brand identity, balancing functionality with a refined aesthetic.',
+    location: 'Mumbai, India',
+    images: loadProjectImages(9),
+    features: [
+      { title: 'Color palette aligned with Lakmé brand standards', description: 'Built-in wardrobes...' },
+      { title: 'Balance of aesthetics + functionality', description: 'Use of wood...' },
+      { title: 'Maintains strong brand identity in design', description: 'Modular furniture...' }
+    ]
+  },
 
   // 2. Timeless Elegance (id: 7)
   {

@@ -2,13 +2,22 @@ import React, { useEffect } from 'react';
 import TeamMember from '../components/ui/TeamMember';
 import motu from '../assets/motu.jpeg';
 import ayushi from '../assets/ayushi.jpeg';
+import about_1 from '../assets/about_1.jpg';
+import about_2 from '../assets/about_2.jpg';
+import about_3 from '../assets/about_3.jpg';
 
 const teamMembers = [
   {
     name: 'Saijal Srivastava',
     role: 'Principal Designer & Founder',
     image: motu,
-    bio: "Designs timeless, elegant homes that tell each client's unique story. With 2 years of experience and a refined, personal approach, she creates layered, character-rich spaces through thoughtful use of material, color, and form.",
+    bio: "As the Principal Designer of SA Atelier we specializes in curating sophisticated, high-end interiors that exude understated luxury. With a focus on textures, materials, and bespoke detailing, they craft spaces that are visually striking yet effortlessly functional. Their design philosophy revolves around creating experiences, not just spaces.",
+  },
+  {
+    name: 'Ayushi Jain',
+    role: 'Principal Designer & Founder',
+    image: ayushi,
+    bio: "Believes in designing homes that feel timeless, elegant, and deeply personal. Through a sensitive use of materials, color, and form, she creates spaces that are layered, expressive, and full of character.",
   },
 ];
 
@@ -58,13 +67,13 @@ export const About = () => {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="aspect-square overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?q=80&w=1992&auto=format&fit=crop" alt="Interior design studio" className="w-full h-full object-cover transition-transform hover:scale-105 duration-700" />
+                <img src={about_1} alt="Interior design studio" className="w-full h-full object-cover transition-transform hover:scale-105 duration-700" />
               </div>
               <div className="aspect-square overflow-hidden row-span-2 translate-y-8">
-                <img src="https://images.unsplash.com/photo-1605774337664-7a846e9cdf17?q=80&w=1974&auto=format&fit=crop" alt="Design process" className="w-full h-full object-cover transition-transform hover:scale-105 duration-700" />
+                <img src={about_2} alt="Design process" className="w-full h-full object-cover transition-transform hover:scale-105 duration-700" />
               </div>
               <div className="aspect-square overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=2069&auto=format&fit=crop" alt="Office interior" className="w-full h-full object-cover transition-transform hover:scale-105 duration-700" />
+                <img src={about_3} alt="Office interior" className="w-full h-full object-cover transition-transform hover:scale-105 duration-700" />
               </div>
             </div>
           </div>
